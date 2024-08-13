@@ -28,7 +28,7 @@
             <div class="container">
                 <h1>Register</h1>
                 <p>Choose how you would like to register with D Labour Chowk:</p>
-                <form action="#" method="post">
+                <form id="registrationForm">
                     <fieldset>
                         <legend>Register as:</legend>
                         <label>
@@ -67,5 +67,22 @@
             <p>&copy; 2024 D Labour Chowk. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            const role = document.querySelector('input[name="account-type"]:checked');
+            if (role) {
+                if (role.value === 'user') {
+                    window.location.href = 'user-dashboard.html';
+                } else if (role.value === 'labor') {
+                    window.location.href = 'labor-dashboard.html';
+                }
+            } else {
+                alert('Please select a role to proceed.');
+            }
+        });
+    </script>
 </body>
 </html>
