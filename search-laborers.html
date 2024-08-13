@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D Labour Chowk | Search for Laborers</title>
+    <link rel="stylesheet" href="search-laborers.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="logo.png" alt="D Labour Chowk Logo" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="user-dashboard.html">Dashboard</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-laborers">
+            <div class="container">
+                <h1>Search for Laborers</h1>
+                <form class="search-form">
+                    <label for="search-query">Search:</label>
+                    <input type="text" id="search-query" name="search-query" placeholder="Enter skills or name" required>
+                    
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" placeholder="Enter location" required>
+                    
+                    <button type="submit" class="btn-primary">Search</button>
+                </form>
+
+                <div class="laborer-results">
+                    <!-- Sample laborer profiles -->
+                    <div class="laborer-profile">
+                        <h2>Laborer Name 1</h2>
+                        <p>Skills: Skill 1, Skill 2</p>
+                        <p>Location: Location 1</p>
+                        <a href="laborer-profile.html" class="btn-primary">View Profile</a>
+                    </div>
+                    <div class="laborer-profile">
+                        <h2>Laborer Name 2</h2>
+                        <p>Skills: Skill 3, Skill 4</p>
+                        <p>Location: Location 2</p>
+                        <a href="laborer-profile.html" class="btn-primary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 D Labour Chowk. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

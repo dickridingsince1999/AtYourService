@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D Labour Chowk | Post a Job Request</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="logo.png" alt="D Labour Chowk Logo" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="user-dashboard.html">Dashboard</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="post-job-request">
+            <div class="container">
+                <h1>Post a Job Request</h1>
+                <form>
+                    <label for="job-title">Job Title:</label>
+                    <input type="text" id="job-title" name="job-title" required>
+                    
+                    <label for="job-description">Job Description:</label>
+                    <textarea id="job-description" name="job-description" rows="5" required></textarea>
+                    
+                    <label for="job-location">Location:</label>
+                    <input type="text" id="job-location" name="job-location" required>
+                    
+                    <label for="contact-info">Contact Information:</label>
+                    <input type="text" id="contact-info" name="contact-info" required>
+                    
+                    <button type="submit" class="btn-primary">Submit Request</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 D Labour Chowk. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

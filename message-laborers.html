@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D Labour Chowk | Message Laborers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="logo.png" alt="D Labour Chowk Logo" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="user-dashboard.html">Dashboard</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="message-laborers">
+            <div class="container">
+                <h1>Message Laborers</h1>
+                <form class="message-form">
+                    <label for="laborer">Select Laborer:</label>
+                    <select id="laborer" name="laborer" required>
+                        <option value="">--Select Laborer--</option>
+                        <option value="laborer1">Laborer 1</option>
+                        <option value="laborer2">Laborer 2</option>
+                    </select>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message here" required></textarea>
+                    
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 D Labour Chowk. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

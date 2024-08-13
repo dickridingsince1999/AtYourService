@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D Labour Chowk | Edit Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="logo.png" alt="D Labour Chowk Logo" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="labor-dashboard.html">Dashboard</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="edit-profile">
+            <div class="container">
+                <h1>Edit Profile</h1>
+                <form action="/update-profile" method="post">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" value="[Laborer's Name]" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" value="[Laborer's Email]" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="skills">Skills:</label>
+                        <textarea id="skills" name="skills" rows="4" required>[Laborer's Skills]</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Experience:</label>
+                        <textarea id="experience" name="experience" rows="4" required>[Laborer's Experience]</textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Save Changes</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 D Labour Chowk. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
